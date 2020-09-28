@@ -7,19 +7,19 @@ class Employee {
     };
 
     empName() {
-        return(this.name)
+        return this.name;
     };
 
     empId() {
-        return(this.id)
+        return this.id;
     };
 
     empEmail() {
-        return(this.email)
+        return this.email;
     };
 
     empPhone() {
-        return(this.phone)
+        return this.phone;
     };
     
     empRole() {
