@@ -10,7 +10,52 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
+const team = [];
 
+function employeeInformation() {
+    inquirer.prompt([
+        {
+
+        }
+    ])
+}
+
+
+function managerInformation() {
+    return inquirer.prompt([
+        {
+
+        }
+    ])
+}
+
+
+function engineerInformation() {
+    return inquirer.prompt([
+        {
+
+        }
+    ])
+}
+
+
+function internInformation() {
+    inquirer.prompt([
+        {
+
+        }
+    ])
+}
+
+
+function generateHTML(fileName, data) {
+    fs.writeFile(fileName, data, "utf8", function (err) {
+        if (err) {
+            throw err;
+        }
+        console.log("You have successfully written your Employee Summary");
+    });
+};
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
