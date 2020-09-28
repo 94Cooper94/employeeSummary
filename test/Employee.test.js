@@ -23,26 +23,26 @@ test("Can set email via constructor argument", () => {
   expect(e.email).toBe(testValue);
 });
 
-test("Can get name via getName()", () => {
+test("Can get name via empName()", () => {
   const testValue = "Alice";
   const e = new Employee(testValue);
-  expect(e.getName()).toBe(testValue);
+  expect(e.empName()).toBe(testValue);
 });
 
-test("Can get id via getId()", () => {
+test("Can get id via empId()", () => {
   const testValue = 100;
   const e = new Employee("Foo", testValue);
-  expect(e.getId()).toBe(testValue);
+  expect(e.empId()).toBe(testValue);
 });
 
-test("Can get email via getEmail()", () => {
+test("Can get email via empEmail()", () => {
   const testValue = "test@test.com";
   const e = new Employee("Foo", 1, testValue);
-  expect(e.getEmail()).toBe(testValue);
+  expect(e.empEmail()).toBe(testValue);
 });
 
-test("getRole() should return \"Employee\"", () => {
+test("empRole() should return \"Employee\"", () => {
   const testValue = "Employee";
   const e = new Employee("Alice", 1, "test@test.com");
-  expect(e.getRole()).toBe(testValue);
+  expect(e.empRole()).toBe(testValue);
 });

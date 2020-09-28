@@ -56,7 +56,17 @@ function managerInfo() {
             message: "Manager Phone Number:",
             name: "phone",
         },
-    ])
+        {
+            type: "input",
+            message: "Manager Office Number:",
+            name: "office",
+        },
+    ]).then(function(answer) {
+        let manager = new Manager(answer.name, answer.id, answer.email, answer.phone, answer.office)
+        team.push(manager);
+
+        employeeInfo()
+    })
 };
 
 
@@ -87,7 +97,12 @@ function engineerInfo() {
             message: "Engineer GitHub:",
             name: "github",
         },
-    ])
+    ]).then(function(answer) {
+        let engineer = new Engineer(answer.name, answer.id, answer.email, answer.phone, answer.github)
+        team.push(engineer);
+
+        employeeInfo();
+    });
 };
 
 
@@ -118,11 +133,16 @@ function internInfo() {
             message: "Intern LinkedIn:",
             name: "linkedin",
         },
-    ])
+    ]).then(function(answer) {
+        let intern = new Intern(answer.name, answer.id, answer.email, answer.phone, answer.linkedin)
+        team.push(intern);
+
+        employeeInfo();
+    });
 };
 
 
-function render(fileName, data) {
+function generateHTML(fileName, data) {
     fs.writeFile(fileName, data, "utf8", function (err) {
         if (err) {
             throw err;
