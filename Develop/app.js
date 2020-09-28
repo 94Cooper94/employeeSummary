@@ -40,7 +40,7 @@ function engineerInformation() {
 
 
 function internInformation() {
-    inquirer.prompt([
+    return inquirer.prompt([
         {
 
         }
@@ -48,12 +48,12 @@ function internInformation() {
 }
 
 
-function generateHTML(fileName, data) {
+function render(fileName, data) {
     fs.writeFile(fileName, data, "utf8", function (err) {
         if (err) {
             throw err;
         }
-        console.log("You have successfully written your Employee Summary");
+        console.log("employee summary successfully written");
     });
 };
 // Write code to use inquirer to gather information about the development team members,
