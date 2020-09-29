@@ -12,7 +12,7 @@
 ## Description
   Interested in keeping all of your eggs in one basket? Utilize this simple and effective employee profile generator to conveniently manage and access colleague information all in one place. Gone are the days of wrestling with your address book hoping for a fleck of vital information only to have your dreams crushed. managerDashboard is here to help.
 
-  ![Demo Pic](./assets/demo.PNG)
+![Demo Pic](./assets/demo.PNG)
 
 ## Installation
 Required packages: Simply run an 'npm install' in the parent directory prior to testing. I accessed npm's inquirer package in developing the question prompts & npm's jest package in order to pass the tests at each stage in development.
