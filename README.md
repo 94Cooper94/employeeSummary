@@ -36,6 +36,6 @@ Cooper Ahearn
 ![Badge](https://img.shields.io/badge/Github-94Cooper94-4cbbb9) 
 
 For a step by step video:
-[![Live Demo](./assets/vidDemo.PNG)](https://drive.google.com/file/d/1Duk7pp0NGIzwJGuEp8_86bjN9RYhAmQm/view)
+[![Live Demo](./Develop/assets/vidDemo.PNG)](https://drive.google.com/file/d/1Duk7pp0NGIzwJGuEp8_86bjN9RYhAmQm/view)
 
 If you have any questions, contact the author directly at LCAhearn94@gmail.com.
